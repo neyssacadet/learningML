@@ -16,3 +16,16 @@ x3 = np.array([
 print("Dataset:", x3)
 print("Dataset shape:", x3.shape)
 
+#Dot Product
+x = np.array([2000, 3, 2])
+
+w = np.array([150, 10000, 8000])
+
+prediction = np.dot(x, w) 
+
+print("Prediction (no bias):", prediction)
+
+manual = x[0]*w[0] + x[1]*w[1] + x[2]*w[2]
+
+print("Manual:", manual)
+print("NumPy:", np.dot(x, w))
